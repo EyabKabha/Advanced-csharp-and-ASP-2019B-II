@@ -73,36 +73,3 @@ It is termed as a ‘lightweight process’, since it is similar to a real proce
 Since the threads of a process share the same memory, synchronizing the access to the shared data within the process gains unprecedented importance.
 
 
-
-sync:
-```
-using System;
-using System.Threading;
-
-namespace Threads_Example
-{
-    class Program
-    {
-
-        static void Test()
-        {
-            Console.WriteLine("line 1:" + Thread.CurrentThread.ManagedThreadId);
-            Thread.Sleep(8000);
-            Console.WriteLine("line 2:" + Thread.CurrentThread.ManagedThreadId);
-        }
-
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Main start:" + Thread.CurrentThread.ManagedThreadId);
-            Test();
-            Console.WriteLine("Main end:" + Thread.CurrentThread.ManagedThreadId);
-        }
-    }
-
-}
-
-```
-
-
-Async:
-```
