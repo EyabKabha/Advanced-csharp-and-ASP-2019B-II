@@ -25,7 +25,7 @@
 │   ├── 06_dead lock
 │   ├── 07_Task Example
 │   ├── 08_Task Returning Value
-│   ├── 09_asunc await
+│   ├── 09_async await
 │   ├── 10_async await
 ```
 
